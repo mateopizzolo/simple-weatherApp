@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Form from './Components/Form/Form';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import bckImage from './assets/pexels.jpg'
+
+const App = () => {
+    return(
+    <React.Fragment>
+      <div style={styles.imagen}>
+            <h1 style={styles.text}>Weather app</h1>
+            <Form /> 
+      </div>
+    </React.Fragment>    
+    )
 }
+
+const styles = {
+    text: {
+    textAlign: 'center',
+    marginTop: '40px',
+    fontSize: '57px',
+    fontFamily: 'Montserrat, sans-serif',
+    fontFamily: 'Open Sans, sans-serif'   
+  },
+  imagen: {
+    backgroundImage: `url(${bckImage})`,
+    backgroundRepeat: 'no-repeat',
+    height: '100%'
+
+  }}
 
 export default App;

@@ -1,0 +1,30 @@
+.weatherInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    bottom:75px;
+    width: 100%;
+}
+
+.weatherInfo h2 {
+    margin: auto;
+}
+
+
+.place {
+    text-align: center;
+    font-size: 30px
+}
+
+.descr {
+    text-align: center;
+    font-size: 25px
+}
+
+.imagen {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 50px;
+    height: 50px;
+}

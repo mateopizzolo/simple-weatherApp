@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+}
+
+.centrando {
+    justify-content: center;
+    height: 100%;
+}
+
+.form  {
+    width: 100%;
+}
+
+.formField {
+    display: block;
+    width: 7%;
+    height: 18px;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: width 0.4s ease-in-out;
+    background: transparent;
+}
+
+.formField:focus {
+    width: 17%;
+    background-color: white;
+}
+
+.formField::placeholder {
+    color: black;
+}
